@@ -61,10 +61,11 @@ input: x: Int
 
 output: Int
 
-2.引数x（Int）を取り、xが7の倍数かどうかを確認し、倍数であればtrue、倍数でなければfalseを返す関数divide2() を作成してください。
+2.引数x（Int）を取り、xを7で割った際の答えと余りを「◯余り△」という文字列で返す関数divide2() を作成してください。
+例） x = 15 , output: "2余り1"
 
 funciton名：divide2() 
 
 input: x: Int
 
-output: boolean
+output: String
