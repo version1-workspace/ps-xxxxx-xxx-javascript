@@ -152,17 +152,20 @@ funciton名：add10(x)
 ##### 例1
 
 input: x = 6
+
 output: 16
 
 ##### 例2
 
 input: x = 1000
+
 output: 1010
 
 
 ##### 例3
 
 input: x = 25
+
 output: 35
 
 ### 問題2
@@ -195,4 +198,5 @@ while (a < 6) {
 funciton名：displayAdded1()
 
 input: なし
+
 output: なし

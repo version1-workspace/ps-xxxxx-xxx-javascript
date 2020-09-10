@@ -58,11 +58,13 @@ funciton名: **howManyFood(numOfPeople)**
 ##### 例1
 
 input: numOfPeople = 3
+
 output: 2100
 
 ##### 例1
 
 input: numOfPeople = 10
+
 output: 7000
 
 ### 問題2
@@ -81,9 +83,11 @@ funciton名: **howManyFood(adalut, child)**
 ##### 例1
 
 input: adult = 3, child = 5
+
 output: 14
 
 ##### 例2
 
 input: adult = 18, child = 6
+
 output: 60
