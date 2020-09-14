@@ -158,11 +158,212 @@ function divide5orNot(x) {
     }
 }
 
-console.log(divide5orNot.name)
-console.log(divide5orNot(10))
-console.log(divide5orNot(8))
-console.log(divide5orNot(0))
-console.log(divide5orNot(null))
-console.log(divide5orNot(undefined))
-console.log(divide5orNot("10"))
-console.log(divide5orNot("hello"))
+// console.log(divide5orNot.name)
+// console.log(divide5orNot(10))
+// console.log(divide5orNot(8))
+// console.log(divide5orNot(0))
+// console.log(divide5orNot(null))
+// console.log(divide5orNot(undefined))
+// console.log(divide5orNot("10"))
+// console.log(divide5orNot("hello"))
+
+
+
+function tenTothirty(x) {
+    return x >= 10 && x < 30
+}
+
+// console.log(tenTothirty.name)
+// console.log(tenTothirty(3))
+// console.log(tenTothirty(10))
+// console.log(tenTothirty(30))
+// console.log(tenTothirty(null))
+// console.log(tenTothirty(undefined))
+// console.log(tenTothirty("10"))
+// console.log(tenTothirty("hello"))
+
+
+function isStringOrNum(x) {
+    return typeof x == "string" || typeof x == "number"
+}
+
+// console.log(isStringOrNum.name)
+// console.log(isStringOrNum(3))
+// console.log(isStringOrNum("10"))
+// console.log(isStringOrNum(null))
+// console.log(isStringOrNum(undefined))
+// console.log(isStringOrNum("hello"))
+
+function moreEqualThan10(x) {
+    if(x >= 10) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// console.log(moreEqualThan10.name)
+// console.log(moreEqualThan10(3))
+// console.log(moreEqualThan10(15))
+// console.log(moreEqualThan10(10))
+// console.log(moreEqualThan10(true))
+// console.log(moreEqualThan10(undefined))
+// console.log(moreEqualThan10("10"))
+// console.log(moreEqualThan10("hello"))
+
+
+
+function isString(x) {
+    if (typeof x == "string"){
+        return true
+    } 
+        return false
+}
+
+// console.log(isString.name)
+// console.log(isString("hello"))
+// console.log(isString(15))
+// console.log(isString(true))
+// console.log(isString(undefined))
+// console.log(isString("10"))
+
+
+function strictMoreEqualThan10(x) {
+    if (typeof x != "number"){
+        return false
+    } else  if(x > 10) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// console.log(strictMoreEqualThan10.name)
+// console.log(strictMoreEqualThan10(3))
+// console.log(strictMoreEqualThan10(15))
+// console.log(strictMoreEqualThan10(10))
+// console.log(strictMoreEqualThan10(true))
+// console.log(strictMoreEqualThan10(undefined))
+// console.log(strictMoreEqualThan10("11"))
+// console.log(strictMoreEqualThan10("hello"))
+
+
+function check10(x) {
+    if (typeof x != "number") {
+        return "xは数字ではありません"
+    }
+    if (x < 10){
+        return "xは10未満です"
+    } else  if(x > 11) {
+        return "xは11以上です"
+    } else if (x == 10){
+        return "xは10です"
+    }
+}
+
+// console.log(check10.name)
+// console.log(check10(3))
+// console.log(check10(15))
+// console.log(check10(10))
+// console.log(check10(true))
+// console.log(check10(undefined))
+// console.log(check10("11"))
+// console.log(check10("hello"))
+
+
+function howManyTrue(x) {
+    let count = 0
+    if (x < 10){
+        console.log("x < 10")
+        console.log(true < 10)
+        count += 1
+    }
+    if(x * 3 < 15) {
+        console.log("x * 3 < 15")
+        console.log(true * 3)
+        count += 1
+    }
+    if(x){
+        console.log("x == true")
+        count += 1
+    }
+    if(typeof x == "string") {
+        console.log("typeof x")
+        count += 1
+    }
+    if( x == 5) {
+        console.log("x == 5")
+        count += 1
+    }
+    return count
+}
+
+// console.log(howManyTrue.name)
+// console.log(howManyTrue(3))
+// console.log(howManyTrue(15))
+// console.log(howManyTrue(5))
+// console.log(howManyTrue(true))  //　これは一体・・・・
+// console.log(howManyTrue(undefined))
+// console.log(howManyTrue("11"))
+// console.log(howManyTrue("hello"))
+
+function switchMoreEqualThan10(x) {
+    switch(x >= 10) {
+        case true:
+            return true
+        default:
+            return false
+    }
+}
+
+// console.log(switchMoreEqualThan10.name)
+// console.log(switchMoreEqualThan10(3))
+// console.log(switchMoreEqualThan10(15))
+// console.log(switchMoreEqualThan10(null))
+// console.log(switchMoreEqualThan10(true)) 
+// console.log(switchMoreEqualThan10(undefined))
+// console.log(switchMoreEqualThan10("15"))
+// console.log(switchMoreEqualThan10("hello"))
+
+
+function switchIsStringOrNum(x) {
+    switch(typeof x) {
+        case "string":
+            return true
+        case "number":
+            return true
+        default:
+            return false
+    }
+}
+
+// console.log(switchIsStringOrNum.name)
+// console.log(switchIsStringOrNum(3))
+// console.log(switchIsStringOrNum(15))
+// console.log(switchIsStringOrNum(null))
+// console.log(switchIsStringOrNum(true))  
+// console.log(switchIsStringOrNum(undefined))
+// console.log(switchIsStringOrNum("15"))
+// console.log(switchIsStringOrNum("hello"))
+
+
+function isWednesday(x) {
+    switch(x) {
+        case "水曜日":
+        case "Wednesday":
+        case "wednesday":
+            console.log("correct")
+            break;
+        default:
+            console.log("wrong")
+    }
+}
+
+// console.log(isWednesday.name)
+// isWednesday("水曜日")
+// isWednesday("Wednesday")
+// isWednesday("wednesday")
+// isWednesday(true)
+// isWednesday(undefined)
+// isWednesday("15")
+// isWednesday(null)
