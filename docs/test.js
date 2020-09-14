@@ -5,10 +5,10 @@ function everyoneIsSteve(familyName) {
     return wholeName
 }
 
-console.log(everyoneIsSteve("Jobs"))
-console.log(everyoneIsSteve(1))
-console.log(everyoneIsSteve(null))
-console.log(everyoneIsSteve(undefined))
+// console.log(everyoneIsSteve("Jobs"))
+// console.log(everyoneIsSteve(1))
+// console.log(everyoneIsSteve(null))
+// console.log(everyoneIsSteve(undefined))
 
 
 function ifInterestedOrNot(answer) {
@@ -31,10 +31,10 @@ function happyBirthdayTo(name) {
     return MESSAGE + name
 }
 
-console.log(happyBirthdayTo("Mike"))
-console.log(happyBirthdayTo(1))
-console.log(happyBirthdayTo(""))
-console.log(happyBirthdayTo(null))
+// console.log(happyBirthdayTo("Mike"))
+// console.log(happyBirthdayTo(1))
+// console.log(happyBirthdayTo(""))
+// console.log(happyBirthdayTo(null))
 
 
 function howManyFood1(numOfPeople) {
@@ -543,4 +543,47 @@ function additionTwo(x, y) {
 // additionTwo(1, "World")
 // additionTwo("1", "World")
 // additionTwo("1", "2")
-additionTwo("1")
+// additionTwo("1")
+
+
+function added10times(x, y) {
+    let sum;
+    for (let i = 0; i < 10; i++) {
+        sum += x
+    }
+    for (let i = 0; i < 10; i++) {
+        sum -= y
+    }
+    return sum
+}
+
+console.log(added10times(5, 10))
+console.log(added10times(10, 10))
+console.log(added10times("Hello", "World"))
+console.log(added10times(null, null))
+
+function myFavoriteFoods(food, snack, drink) {
+    
+    function message(type, food) {
+        if (food) {
+            console.log("My favorite "+ type + " is "+ food + ".")
+        } else {
+           console.log("My favorite "+ type + " is nothing.")
+        }
+    }
+
+    if ((food == null || food == "") && (snack == null || snack == "") && (drink == null || drink == "")){
+        console.log("I don't like any food!")
+    } else {
+       message("food", food)
+        message("snack", snack)
+        message("drink", drink)
+    }
+}
+
+
+// myFavoriteFoods("Pizza", "Chips", "Coke")
+// myFavoriteFoods("Pizza", "", "Coke")
+// myFavoriteFoods("Pizza", "", null)
+// myFavoriteFoods(null, null, null)
+// myFavoriteFoods("", "", "")

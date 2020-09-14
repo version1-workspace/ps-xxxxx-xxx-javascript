@@ -1,5 +1,5 @@
 
-# debugger
+# 関数 - return
 
 ## サンプルコード
 

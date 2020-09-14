@@ -31,175 +31,107 @@ JavaScriptでは、関数を定義する際、いくつでも引数を設定す�
 
 ## 問題
 
+
+
 ### 問題1
 
-引数xを取り、下記の５パターンのうちtrueになる個数を返す関数``consoleHowManyTrue``があります。
+引数x, yを取り、下記の条件を満たす関数``added10times``を作成してください。
 
-1. xが10未満
-3. xそのものがtrueかどうか
-4. xが文字列かどうか
+* 変数sumを宣言する
+* sumにxを10回足す
+* sumにyを10回分引く
+* 最終的なsumの値を返す
 
-```javascript
-function consoleHowManyTrue(x) {
-    let count = 0
-    if (x < 10){
-        count += 1
-    }
-    if(x){
-        count += 1
-    }
-    if(typeof x == "string") {
-        count += 1
-    }
-    return count
-}
-```
-
-これから上記関数がうまく動くかテストするために、xに対しどの条件処理が実行されたか確認したいと考えています。
-
-``console.log``を使ってそれぞれの処理が実行されたかどうか確認できるようにしてください。
-
-funciton名： consoleHowManyTrue()
+funciton名： added10times(x, y)
 
 #### 例
 
 ##### 例1
 
 ```
-input: 5
+input: x = 5, y = 10
 
-output: なし
-
-表示：
-x < 10
-x == true
+output: -50
 ```
 
 
 ##### 例2
 
 ```
-input: "hello"
+input: x = 10, y = 10
 
-output: なし
-
-表示：
-x == true
-typeof x == string
+output: 0
 ```
 
 ##### 例3
 
 ```
-input: null
+input: x = "Hello", y = "World"
 
-output: なし
-
-表示：
-x < 10
+output: NaN
 ```
 
 ##### 例4
 
 ```
-input: undefined
+input: x = null, y = null
 
-output: なし
-
-表示：
-
+output: 0
 ```
 
 
 ### 問題2
 
-関数``checkComparison``を作成してください。
+下記の3つの引数を取り、それぞれを``console.log``で表示する関数``myFavoriteFoods``を作成してください。
 
-その中に、下記の変数と値のリストについて、値のboolean判定の結果を、変数に代入し宣言してください。
+1. food: 一番好きな食べ物 -> "My favorite food is （一番好きな食べ物）."
+2. snack: 一番好きなお菓子 -> "My favorite snack is （一番好きなお菓子）."
+3. drink: 一番好きな飲み物 -> "My favorite drink is （一番好きな飲み物）."
 
-* 引数xを取る
-* 変数w、値: 5
-* 変数y、値: w < x < 10　かどうか
-* 変数z、値: x < 0 あるいは 10 < x かどうか
+ただし、下記の２つの条件がつきます。
 
-また、y, zに入るboolean型が何になるか、``console.log``を使って表示してください。
+* それぞれが``null``、あるいは表記なし``""``で入力された場合は``"My favorite food is nothing."``が表示される
+* すべてが``null``、あるいは表記なし``""``で入力された場合は、``"I don't like any food!"``が表示される
 
-funciton名： checkComparison(x)
+funciton名： myFavoriteFoods(food, snack, drink)
 
 #### 例
 
 ##### 例1
 
 ```
-input: 5
+input: food = "Pizza", snack = "Chips", drink = "Coke"
 
 output: なし
 
 表示：
-false
-false
+My favorite food is Okonomiyaki.
+My favorite snack is Caramel.
+My favorite drink is Coke.
 ```
 
 
 ##### 例2
 
 ```
-input: 3
+input: food = "Okonomiyaki", snack = "", drink = "Beer"
 
 output: なし
 
 表示：
-false
-false
+My favorite food is Okonomiyaki.
+My favorite snack is nothing.
+My favorite drink is Coke.
 ```
 
 ##### 例3
 
+
 ```
-input: 9
+input: food = "", snack = "", drink = null
 
 output: なし
 
 表示：
-true
-false
+I don't like any food!
 ```
-
-##### 例4
-
-```
-input: 20
-
-output: なし
-
-表示：
-false
-true
-```
-
-
-##### 例5
-
-```
-input: null
-
-output: なし
-
-表示：
-false
-false
-```
-
-
-##### 例6
-
-```
-input: undefined
-
-output: なし
-
-表示：
-false
-false
-```
-
