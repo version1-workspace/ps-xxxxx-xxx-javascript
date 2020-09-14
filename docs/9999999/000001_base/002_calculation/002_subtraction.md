@@ -87,6 +87,8 @@ funciton名：subtraction1() {
     }
 }
 
+```
 input: なし
 
 output: なし
+```

@@ -1,6 +1,6 @@
 
 
-# 変数
+# 足し算
 
 ## サンプルコード
 
@@ -80,17 +80,17 @@ k += 5;  // -> 3 + 5 = 8
 #### 回答
 
 ```javascript
-let a = 3;
-a++; // -> 3 + 1 = 4
-a++; // -> 4 + 1 = 5
+let x = 3;
+x++; // -> 3 + 1 = 4
+x++; // -> 4 + 1 = 5
 ```
 
 または
 
 ```javascript
-let a = 3;
-++a; // -> 1 + 3 = 4
-++a; // -> 1 + 4 = 5
+let x = 3;
+++x; // -> 1 + 3 = 4
+++x; // -> 1 + 4 = 5
 ```
 
 #### 解説
@@ -151,22 +151,52 @@ funciton名：add10(x)
 
 ##### 例1
 
-input: x = 6
+```
+input: x = 3
 
 output: 16
+```
 
 ##### 例2
 
-input: x = 1000
+```
+input: x = 0
 
-output: 1010
+output: 10
+```
 
 
 ##### 例3
 
-input: x = 25
+```
+input: x = -5
 
-output: 35
+output: 5
+```
+
+##### 例4
+
+```
+input: x = null
+
+output: 10
+```
+
+##### 例5
+
+```
+input: x = "10"
+
+output: 1010
+```
+
+##### 例6
+
+```
+input: x = "hello"
+
+output: hello10
+```
 
 ### 問題2
 
@@ -197,6 +227,8 @@ while (a < 6) {
 
 funciton名：displayAdded1()
 
+```
 input: なし
 
 output: なし
+```

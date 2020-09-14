@@ -18,8 +18,6 @@ let favoriteFood1 = "Bones"
 let favoriteFood2 = "Meat"
 ```
 
-
-
 #### 解説
 
 ``const``は読み取り専用、再代入ができない宣言方法です。
@@ -44,50 +42,90 @@ let favoriteFood2 = "Meat"
 
 ### 問題1
 
-howManyFood()は、パーティーに来る人数に合わせて必要な予算を計算する関数です。
+howManyFood1()は、パーティーに来る人数に合わせて必要な予算を計算する関数です。
 引数``numOfPeople``には、パーティー参加者の数を入力します。
 関数内に、下記の情報を**定数で宣言**し、必要な予算を返す関数を完成させてください。
 
 * 一人当たりに用意するビールの本数 = 2
 * ビール1本あたりの値段 = 350
 
-funciton名: **howManyFood(numOfPeople)**
+funciton名: **howManyFood1(numOfPeople)**
 
 #### 例
 
 ##### 例1
 
+```
 input: numOfPeople = 3
 
 output: 2100
+```
 
-##### 例1
+##### 例2
 
-input: numOfPeople = 10
+```
+input: numOfPeople = 0
 
-output: 7000
+output: 0
+```
+
+##### 例3
+
+```
+input: numOfPeople = null
+
+output: 0
+```
+
+##### 例4
+
+```
+input: numOfPeople = undefined
+
+output: NaN
+```
 
 ### 問題2
 
-``howManyFood()``は、パーティーに来る人数に合わせて必要なピザの枚数を計算する関数です。
+``howManyFood2()``は、パーティーに来る人数に合わせて必要なピザの枚数を計算する関数です。
 引数``adult``には、パーティー参加者の大人の数、``child``には子供の数を入力します。
 関数内に、下記の情報を**定数で宣言**し、必要なピザの枚数を返してください。
 
 * 大人一人当たりのピザの枚数 = 3
 * 子供一人当たりのピザの枚数 = 1
 
-funciton名: **howManyFood(adalut, child)**
+funciton名: **howManyFood2(adalut, child)**
 
 #### 例
 
 ##### 例1
 
+```
 input: adult = 3, child = 5
 
 output: 14
+```
 
-##### 例2
+##### 例3
 
-input: adult = 18, child = 6
+```
+input: adult = 0, child = 0
 
-output: 60
+output: 0
+```
+
+##### 例3
+
+```
+input: adult = null, child = null
+
+output: 0
+```
+
+##### 例4
+
+```
+input: adult = undefined, child = undefined
+
+output: NaN
+```

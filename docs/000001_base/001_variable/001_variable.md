@@ -118,21 +118,27 @@ funciton名: **ifInterestedOrNot(answer)**
 
 ##### 例1
 
+```
 input: answer = true
 
 output: true
+```
 
 ##### 例2
 
+```
 input: answer = false
 
 outoput: false
+```
 
 ##### 例3
 
+```
 input: answer = null
 
 output: null
+```
 
 ### 問題2
 
@@ -149,18 +155,24 @@ funciton名: **serveDrink(order)**
 
 ##### 例1
 
+```
 input: order = "beer"
 
 output: "beer"
+```
 
 ##### 例2
 
+```
 input: order = "orange juice"
 
 output: "orange juice"
+```
 
 ##### 例3
 
+```
 input: order = null
 
 output: "water"
+```
