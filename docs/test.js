@@ -1,4 +1,15 @@
 // variable
+function everyoneIsSteve(familyName) {
+    let wholeName = "Steve "
+    wholeName += familyName
+    return wholeName
+}
+
+console.log(everyoneIsSteve("Jobs"))
+console.log(everyoneIsSteve(1))
+console.log(everyoneIsSteve(null))
+console.log(everyoneIsSteve(undefined))
+
 
 function ifInterestedOrNot(answer) {
     let result = answer
@@ -14,6 +25,17 @@ function serveDrink(order) {
 }
 
 // constant
+
+function happyBirthdayTo(name) {
+    const MESSAGE = "Happy Birthday to "
+    return MESSAGE + name
+}
+
+console.log(happyBirthdayTo("Mike"))
+console.log(happyBirthdayTo(1))
+console.log(happyBirthdayTo(""))
+console.log(happyBirthdayTo(null))
+
 
 function howManyFood1(numOfPeople) {
     const BEERPP = 2;
@@ -367,3 +389,158 @@ function isWednesday(x) {
 // isWednesday(undefined)
 // isWednesday("15")
 // isWednesday(null)
+
+
+
+function subtract1by1() {
+    for(let i = 10; i > 0; i--) {
+        console.log(i)
+    }
+}
+
+// subtract1by1()
+
+function subtractBy2(x) {
+    for(let i = x; 0 <= i; i-=2) {
+        console.log(i)
+    }
+}
+
+// subtractBy2(10)
+// subtractBy2(0)
+// subtractBy2(-1)
+// subtractBy2(null)
+
+
+function fizzBuzz() {
+    for(let i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0){
+            console.log("Buzz")
+        } else if ( i % 3 == 0) {
+            console.log("Fizz")
+        } else {
+            console.log(i)
+        }
+    }
+}
+
+// fizzBuzz()
+
+function while1() {
+    let i = 1;
+    while( i < 6){
+        console.log(i)
+        i++
+    }
+}
+
+// while1()
+
+function whileSubtract1by1() {
+    let i = 10
+    while (i > 0) {
+        console.log(i)
+        i--
+    }
+}
+
+// whileSubtract1by1()
+
+function whileSubtractBy2(x) {
+    let i = x
+    while (i >= 0) {
+        console.log(i)
+        i -= 2
+    }
+}
+
+// whileSubtractBy2(10)
+// whileSubtractBy2(0)
+// whileSubtractBy2(-2)
+// whileSubtractBy2(null)
+
+function whileFizzBuzz() {
+    let i = 1
+    while (i <= 100) {
+        if (i % 3 == 0 && i % 5 == 0) {
+        console.log("Buzz")
+        } else if (i % 3 == 0 ){
+            console.log("Fizz")
+        } else {
+            console.log(i)
+        }
+        i++
+    }
+}
+
+// whileFizzBuzz()
+
+function whileDice10() {
+    let dice;
+    do {
+        dice = Math.floor(Math.random() * 10) + 1
+        console.log(dice)
+    }while(dice != 5)
+}
+
+// whileDice10()
+
+const A = 1;
+const B = 2;
+
+function C(x) {
+    console.log("The sum of A and B is " + (A + B))
+    console.log("The sum of A and x is " + (A + x))
+    console.log("The sum of x and 5 is " + (x + 5))
+}
+
+// C(5)
+
+
+function consoleHowManyTrue(x) {
+    let count = 0
+    if (x < 10){
+        console.log("x < 10")
+        count += 1
+    }
+    if(x){
+        console.log("x == true")
+        count += 1
+    }
+    if(typeof x == "string") {
+        console.log("typeof x == string")
+        count += 1
+    }
+    return count
+}
+
+// consoleHowManyTrue(5)
+// consoleHowManyTrue("hello")
+// consoleHowManyTrue(undefined)
+// consoleHowManyTrue(null)
+
+
+function checkComparison(x) {
+    let w = 5
+    let y = x > w && x < 10
+    let z = x < 0 || x > 10
+    console.log(y)
+    console.log(z)
+}
+
+// checkComparison(5)
+// checkComparison(9)
+// checkComparison(20)
+// checkComparison(null)
+// checkComparison(undefined)
+
+function additionTwo(x, y) {
+    console.log(x + y)
+}
+
+// additionTwo(1, 2)
+// additionTwo("Hello", "World")
+// additionTwo(1, "World")
+// additionTwo("1", "World")
+// additionTwo("1", "2")
+additionTwo("1")

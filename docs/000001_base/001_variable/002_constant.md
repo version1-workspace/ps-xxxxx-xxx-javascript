@@ -40,10 +40,59 @@ let favoriteFood2 = "Meat"
 
 ## 問題
 
+
 ### 問題1
 
+``happyBirthdayTo(name)``は、引数nameを取る関数です。
+
+下記の条件を満たす関数を作成してください。
+
+* 定数で文字列``Happy Birthday to ``を宣言する
+* 上記の定数に、引数のnameを合わせた文字列を返す
+
+funciton名: **happyBirthdayTo(name)**
+
+#### 例
+
+##### 例1
+
+```
+input: name = "Mike"
+
+output: "Happy Birthday to Mike"
+```
+
+##### 例2
+
+```
+input: name = null
+
+output: "Happy Birthday to null"
+```
+
+##### 例3
+
+```
+input: name = 1
+
+output: "Happy Birthday to 1"
+```
+
+##### 例4
+
+```
+input: name = ""
+
+output: "Happy Birthday to "
+```
+
+
+### 問題2
+
 howManyFood1()は、パーティーに来る人数に合わせて必要な予算を計算する関数です。
+
 引数``numOfPeople``には、パーティー参加者の数を入力します。
+
 関数内に、下記の情報を**定数で宣言**し、必要な予算を返す関数を完成させてください。
 
 * 一人当たりに用意するビールの本数 = 2
@@ -85,7 +134,7 @@ input: numOfPeople = undefined
 output: NaN
 ```
 
-### 問題2
+### 問題3
 
 ``howManyFood2()``は、パーティーに来る人数に合わせて必要なピザの枚数を計算する関数です。
 引数``adult``には、パーティー参加者の大人の数、``child``には子供の数を入力します。

@@ -105,7 +105,55 @@ console.log(b);  // -> b = 8
 
 ## 問題
 
+
 ### 問題1
+
+``everyoneIsSteve``は、引数``familyName``を取る関数です。
+
+下記の条件を満たす関数``everyoneIsSteve``を作成してください。
+
+1. 関数内で、``let``を使って、``wholeName = "Steve"``を宣言する
+2. 1のあと、``wholeName``に、引数``familyName``を加えて、例のoutputのように文字列を作成する
+3. ``wholeName``を返す
+
+funciton名: **everyoneIsSteve(familyName)**
+
+#### 例
+
+##### 例1
+
+```
+input: familyName = "Kim"
+
+output: "Steve Kim"
+```
+
+##### 例2
+
+```
+input: familyName = "Jobs"
+
+output: "Steve Jobs"
+```
+
+
+##### 例3
+
+```
+input: familyName = 1
+
+output: "Steve 1"
+```
+
+##### 例4
+
+```
+input: familyName = null
+
+output: "Steve null"
+```
+
+### 問題2
 
 ``ifInterestedOrNot(answer)``は、true, false, nullを引数``answer``として取る関数です。
 
@@ -140,7 +188,7 @@ input: answer = null
 output: null
 ```
 
-### 問題2
+### 問題3
 
 引数``order``を取る``serveDrink()``は、入ったオーダーのドリンクか、元々用意してある水をお客様に出す関数です。
 
