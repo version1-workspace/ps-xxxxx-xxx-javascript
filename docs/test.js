@@ -297,12 +297,10 @@ function howManyTrue(x) {
     let count = 0
     if (x < 10){
         console.log("x < 10")
-        console.log(true < 10)
         count += 1
     }
     if(x * 3 < 15) {
         console.log("x * 3 < 15")
-        console.log(true * 3)
         count += 1
     }
     if(x){
@@ -324,7 +322,7 @@ function howManyTrue(x) {
 // console.log(howManyTrue(3))
 // console.log(howManyTrue(15))
 // console.log(howManyTrue(5))
-// console.log(howManyTrue(true))  //　これは一体・・・・
+console.log(howManyTrue(true))  //　これは一体・・・・
 // console.log(howManyTrue(undefined))
 // console.log(howManyTrue("11"))
 // console.log(howManyTrue("hello"))
