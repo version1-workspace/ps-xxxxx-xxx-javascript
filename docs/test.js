@@ -587,8 +587,69 @@ function myFavoriteFoods(food, snack, drink) {
 // myFavoriteFoods("", "", "")
 
 
+const additionTwoArrow = (x, y) => {
+    console.log(x + y)
+}
 
-console.log(1);
-console.log(A);
-console.log(A+B);
-console.log(A+"たす"+B+"は"+A+B);
+// additionTwoArrow(1, 2)
+// additionTwoArrow("Hello", "World")
+// additionTwoArrow(1, "World")
+// additionTwoArrow("1", "World")
+// additionTwoArrow("1", "2")
+// additionTwoArrow("1")
+
+
+const added10timesArrow = (x, y) => {
+    let sum;
+    for (let i = 0; i < 10; i++) {
+        sum += x
+    }
+    for (let i = 0; i < 10; i++) {
+        sum -= y
+    }
+    return sum
+}
+
+// console.log(added10timesArrow(5, 10))
+// console.log(added10timesArrow(10, 10))
+// console.log(added10timesArrow("Hello", "World"))
+// console.log(added10timesArrow(null, null))
+
+const myFavoriteFoodsArrow = (food, snack, drink) => {
+    
+    function message(type, food) {
+        if (food) {
+            console.log("My favorite "+ type + " is "+ food + ".")
+        } else {
+           console.log("My favorite "+ type + " is nothing.")
+        }
+    }
+
+    if ((food == null || food == "") && (snack == null || snack == "") && (drink == null || drink == "")){
+        console.log("I don't like any food!")
+    } else {
+       message("food", food)
+        message("snack", snack)
+        message("drink", drink)
+    }
+}
+
+
+// myFavoriteFoodsArrow("Pizza", "Chips", "Coke")
+// myFavoriteFoodsArrow("Pizza", "", "Coke")
+// myFavoriteFoodsArrow("Pizza", "", null)
+// myFavoriteFoodsArrow(null, null, null)
+// myFavoriteFoodsArrow("", "", "")
+
+
+(function() { console.log(`hello`)})()
+
+const hello = (function(greeting) { console.log(greeting) }("Hello"))
+
+hello
+
+const add2 = (function (x, y) {
+    console.log(x + y)
+}(1, 10 ));
+
+add2
