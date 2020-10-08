@@ -555,10 +555,10 @@ function added10times(x, y) {
     return sum
 }
 
-console.log(added10times(5, 10))
-console.log(added10times(10, 10))
-console.log(added10times("Hello", "World"))
-console.log(added10times(null, null))
+// console.log(added10times(5, 10))
+// console.log(added10times(10, 10))
+// console.log(added10times("Hello", "World"))
+// console.log(added10times(null, null))
 
 function myFavoriteFoods(food, snack, drink) {
     
@@ -585,3 +585,10 @@ function myFavoriteFoods(food, snack, drink) {
 // myFavoriteFoods("Pizza", "", null)
 // myFavoriteFoods(null, null, null)
 // myFavoriteFoods("", "", "")
+
+
+
+console.log(1);
+console.log(A);
+console.log(A+B);
+console.log(A+"たす"+B+"は"+A+B);
