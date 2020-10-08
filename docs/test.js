@@ -642,14 +642,36 @@ const myFavoriteFoodsArrow = (food, snack, drink) => {
 // myFavoriteFoodsArrow("", "", "")
 
 
-(function() { console.log(`hello`)})()
+// (function() { console.log(`hello`)})()
 
 const hello = (function(greeting) { console.log(greeting) }("Hello"))
 
-hello
+// hello
 
 const add2 = (function (x, y) {
     console.log(x + y)
 }(1, 10 ));
 
-add2
+// add2
+
+
+let countEgg = (function() {
+    let egg = 0;
+    function addEgg() {
+        egg++
+    }
+    return {
+        check: function() {
+            console.log(egg)
+        },
+        add: function() {
+            addEgg();
+        }
+    }
+})();
+
+
+countEgg.check()
+countEgg.add()
+countEgg.check()
+// console.log(countEgg.egg)
