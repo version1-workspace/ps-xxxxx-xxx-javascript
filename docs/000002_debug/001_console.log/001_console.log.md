@@ -47,11 +47,11 @@ JavaScriptでは、``console.log``を使って、変数や定数などの値や�
 
 ### 問題1
 
-引数xを取り、下記の５パターンのうちtrueになる個数を返す関数``consoleHowManyTrue``があります。
+引数xを取り、下記の3パターンのうちtrueになる個数を返す関数``consoleHowManyTrue``があります。
 
 1. xが10未満
-3. xそのものがtrueかどうか
-4. xが文字列かどうか
+2. xそのものがtrueかどうか
+3. xが文字列かどうか
 
 ```javascript
 function consoleHowManyTrue(x) {

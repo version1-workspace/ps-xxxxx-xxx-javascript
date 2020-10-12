@@ -11,59 +11,14 @@
                 font-size: 16px;
                 text-align: center;
             }
-
-
-            #celcius{
-                background:slategray;
-                color:#fff;
-                height:50px;
-                width:100px;
-                font-size:2em;
-                border:2px solid gray;
-                border-radius:20px;
-                margin:2px;
-                text-align:center;
-            }
-
-            #calculateDegree{
-                display:block;
-                cursor: pointer;
-                height:50px;
-                width:200px;
-                padding:2px 5px;
-                margin:32px auto;
-                font-size:2em;
-                color:wheat;
-                background:gray;
-                font-weight:800;
-                border:2px solid gray;
-                border-radius:5px;
-            }
-
-            #calculateDegree:hover {
-                background: wheat;
-                color: gray;
-            }
-
-            .calculater{
-                display:block;
-                width:500px;
-                margin: 10px auto;
-                text-align:center;
-            }
-
         </style>
     </head>
-
     <body>
-
         <div class="calculater">
             <label for="name">摂氏温度を入力してください</label> <br />
             <input id="celcius" type="number" max="500" name="name"></input>
-            <a id="calculateDegree">Calculate!</a>
+            <button id="calculateDegree">Calculate!</button>
         </div>
-
         <p id="degree"></p>
         <script type="text/javascript" src="debugger.js"></script>
     </body>
-</html>

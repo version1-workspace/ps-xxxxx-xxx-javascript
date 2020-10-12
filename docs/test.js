@@ -644,7 +644,30 @@ const myFavoriteFoodsArrow = (food, snack, drink) => {
 
 // (function() { console.log(`hello`)})()
 
-const hello = (function(greeting) { console.log(greeting) }("Hello"))
+let Greeting = function() {
+    // ここを実装してください
+    return {
+        morning: function(name) {
+            console.log("Good morning, " + name)
+        },
+        daytime: function(name) {
+            console.log("Hello, " + name)
+        },
+        evening: function(name) {
+            console.log("Good evening, " + name)
+        },
+        night: function(name) {
+            console.log("Good night, " + name)
+        }
+    }
+};
+
+const greeting = Greeting();
+greeting.morning("Mike") // => "Good morning, Mike!" が表示される
+greeting.daytime("Mike") // => "Hello, Mike!" が表示される
+greeting.evening("Mike") // => "Good evening, Mike!" が表示される
+greeting.night("Mike") // => "Good night, Mike!" が表示される
+
 
 // hello
 
@@ -655,7 +678,7 @@ const add2 = (function (x, y) {
 // add2
 
 
-let countEgg = (function() {
+let countEgg = function() {
     let egg = 0;
     function addEgg() {
         egg++
@@ -668,10 +691,45 @@ let countEgg = (function() {
             addEgg();
         }
     }
-})();
+}
 
+abc = countEgg()
 
-countEgg.check()
-countEgg.add()
-countEgg.check()
+abc.add()
+abc.check()
+
+// countEgg.check()
+// countEgg.add()
+// countEgg.check()
 // console.log(countEgg.egg)
+
+
+let hoge = "Hello world!!!"
+// console.log(hoge[4])
+// console.log(hoge.slice(0, 5))
+// console.log(hoge.slice(6, hoge.length - 1))
+
+
+let fruit = "banana"
+
+// 回答例１
+let temp = ""
+for (let i = 0; i < hoge.length; i++){
+    if (fruit[i] != "a" && fruit[i]){
+        temp += fruit[i]
+    } else {
+      
+    }
+}
+console.log(temp)
+
+fruit = "banana"
+
+// 回答例２
+let replace = /a/g;
+console.log(fruit.replace(replace, ''))
+
+
+let word = "apple,banana,pineapple"
+
+console.log(word.replace(/,/g, '\n'))

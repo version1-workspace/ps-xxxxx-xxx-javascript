@@ -5,22 +5,29 @@
 
 ### サンプル1
 
-``countEgg``という変数に代入された、まだ完成していない、書きかけの即時関数があります。
+``Egg``という変数に代入された、まだ完成していない、クロージャを使った書きかけの関数があります。
+
+また、この関数は下記条件を満たすと完成になります。
+
+1. Egg.add()でeggの数が1足される
+2. Egg.check()で現在のeggの数が``console.log``で確認される
 
 ```javascript
-let countEgg = (function() {
-    let egg = 0;
-    function addEgg() {
-        egg++
+let Egg = function() {
+        // ここを実装してください
+    return {
+        // ここを実装してください
     }
-    return {}
-})();
+};
+const egg = Egg()
+egg.check() // => 0 が表示される
+egg.add()
+egg.check() // => 1 が表示される
+egg.add()
+egg.add()
+egg.add()
+egg.check() // => 1 + 3 = 4 が表示される
 ```
-
-また、変数``countEgg``の即時関数は下記条件を満たすと完成になります。
-
-1. countEgg.add()でeggの数が1足される
-2. countEgg.check()で現在のeggの数が``console.log``で確認される
 
 クロージャを使って、上記のコードを完成させてください。
 
@@ -29,7 +36,7 @@ let countEgg = (function() {
 #### 回答
 
 ```javascript
-let countEgg = (function() {
+let Egg = function() {
     let egg = 0;
     function addEgg() {
         egg++
@@ -42,12 +49,14 @@ let countEgg = (function() {
             addEgg();
         }
     }
-})();
+};
 ```
 
 #### 解説
 
-クロージャは、関数内で宣言したメソッドや変数へのアクセスを制限し、それらにアクセスできるパブリック関数を別途定義することができます。
+クロージャは、``return``でオブジェクトを返すことによって、関数を返すことができます。
+
+また、これを使うことで、関数内で宣言したメソッドや変数へのアクセスを制限し、それらにアクセスできるパブリック関数を別途定義することができます。
 
 #####　関数の呼び出しと評価
 
@@ -62,6 +71,7 @@ function greeting() {
 
 greeting()
 ```
+
 </details>
 
 ## 問題
@@ -69,82 +79,37 @@ greeting()
 
 ### 問題1
 
-引数``greeting``を``console.log``で表示し、文字列``"Hello"``を実際に引数として取る即時関数を書いてください。
-また、それを変数名``hello``に代入し、呼び出し実行して下さい。
+クロージャを使って、下記のコードを完成させてください。
 
-
-#### 例
-
-##### 例1
-
-```
-input: greeting = "Hello"
-
-output: なし
-
-表示：
-"Hello"
-```
-
-
-##### 例2
-
-```
-input: food = "Okonomiyaki", snack = "", drink = "Beer"
-
-output: なし
-
-表示：
-My favorite food is Okonomiyaki.
-My favorite snack is nothing.
-My favorite drink is Coke.
+```javascript
+let Greeting = function() {
+        // ここを実装してください
+    return {
+        // ここを実装してください
+    }
+};
+const greeting = Greeting()
+greeting.morning("Mike") // => "Good morning, Mike!" が表示される
+greeting.daytime("Mike") // => "Hello, Mike!" が表示される
+greeting.evening("Mike") // => "Good evening, Mike!" が表示される
+greeting.night("Mike") // => "Good night, Mike!" が表示される
 ```
 
 
 ### 問題2
 
-引数x, yを取り、下記条件を満たす関数を**即時関数**で作成してください。
+クロージャを使って、下記のコードを完成させてください。
 
-* x, yが数値のとき x と y の合計値を返す
-* 即時関数で記載（関数の呼び出しは行わず、読み込みと同時に実行される）
-
-また、作成した関数については、下記の要件を満たすようにしてください。
-
-* 変数``addTwoNumResult``に代入し、``console.log``で結果を呼び出す
-
-funciton： addTwoNumResultに代入
-
-#### 例
-
-##### 例1
-
-```
-input: x = 5, y = 10
-
-output: 15
-```
-
-
-##### 例2
-
-```
-input: x = 1, y = なし （1）
-
-output: NaN
-```
-
-##### 例3
-
-```
-input: なし　()
-
-output: NaN
-```
-
-##### 例4
-
-```
-input: x = 1, y = なし　(1,)
-
-output: NaN
+```javascript
+let CalculateTwoNum = function() {
+        // ここを実装してください
+    return {
+        // ここを実装してください
+    }
+};
+const calculateTwoNum = CalculateTwoNum()
+calculateTwoNum.addition(10, 5) // => 15 が表示される
+calculateTwoNum.subtraction(10, 5) // => 5 が表示される
+calculateTwoNum.divid(10, 5) // => 2 が表示される
+calculateTwoNum.multiple(10, 5) // => 50 が表示される
 ```

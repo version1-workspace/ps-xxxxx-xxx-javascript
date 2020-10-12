@@ -35,12 +35,9 @@ JavaScriptでは、関数を定義する際、いくつでも引数を設定す�
 
 ### 問題1
 
-引数x, yを取り、下記の条件を満たす関数``added10times``を作成してください。
+引数x, yを取り、xの10倍を足し、yの10倍を引いた合計値を返す関数``added10times``を作成してください。
+なお、x, yには数値しか入りません
 
-* 変数sumを宣言する
-* sumにxを10回足す
-* sumにyを10回分引く
-* 最終的なsumの値を返す
 
 funciton名： added10times(x, y)
 
@@ -59,22 +56,6 @@ output: -50
 
 ```
 input: x = 10, y = 10
-
-output: 0
-```
-
-##### 例3
-
-```
-input: x = "Hello", y = "World"
-
-output: NaN
-```
-
-##### 例4
-
-```
-input: x = null, y = null
 
 output: 0
 ```
