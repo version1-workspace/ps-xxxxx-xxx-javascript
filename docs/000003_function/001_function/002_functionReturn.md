@@ -63,7 +63,7 @@ output: false
 ```
 input: "apple"
 
-output: なし
+output: false
 ```
 
 ### 問題2

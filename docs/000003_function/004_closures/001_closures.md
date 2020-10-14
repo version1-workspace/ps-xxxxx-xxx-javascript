@@ -14,6 +14,7 @@
 
 ```javascript
 let Egg = function() {
+    let egg = 0;
         // ここを実装してください
     return {
         // ここを実装してください
@@ -41,10 +42,11 @@ let Egg = function() {
     function addEgg() {
         egg++
     }
+    function check() {
+        console.log(egg)
+    }
     return {
-        check: function() {
-            console.log(egg)
-        },
+        check,
         add: function() {
             addEgg();
         }
