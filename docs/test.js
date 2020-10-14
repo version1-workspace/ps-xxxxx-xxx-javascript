@@ -713,23 +713,63 @@ let hoge = "Hello world!!!"
 let fruit = "banana"
 
 // 回答例１
-let temp = ""
-for (let i = 0; i < hoge.length; i++){
-    if (fruit[i] != "a" && fruit[i]){
-        temp += fruit[i]
-    } else {
+// let temp = ""
+// for (let i = 0; i < hoge.length; i++){
+//     if (fruit[i] != "a" && fruit[i]){
+//         temp += fruit[i]
+//     } else {
       
-    }
-}
-console.log(temp)
+//     }
+// }
+// console.log(temp)
 
 fruit = "banana"
 
 // 回答例２
-let replace = /a/g;
-console.log(fruit.replace(replace, ''))
+// let replace = /a/g;
+// console.log(fruit.replace(replace, ''))
 
 
-let word = "apple,banana,pineapple"
+// let word = "apple,banana,pineapple"
 
-console.log(word.replace(/,/g, '\n'))
+// console.log(word.replace(/,/g, '\n'))
+
+
+// let array1to5 = [1, 2, 3, 4, 5]
+// console.log(array1to5[0])
+// console.log(array1to5.slice(0, 3))
+// console.log(array1to5.slice(1, array1to5.length))
+
+
+// array1to5.push(6)   // [1, 2, 3, 4, 5, 6]
+// array1to5.unshift(0)  // [0, 1, 2, 3, 4, 5, 6]
+
+// console.log(array1to5)
+
+
+// array1to5.pop()   // [0, 1, 2, 3, 4, 5]
+// console.log(array1to5)
+
+// array1to5.shift()  // [1, 2, 3, 4, 5]
+// console.log(array1to5)
+
+// array1to5.splice(2, 0, "insetad")
+// console.log(array1to5)
+
+// array1to5.splice(2, 1)
+// console.log(array1to5)
+
+// let randomNum = [1, 5, 3, 6, 7, 3, 4, 2, 9, 4, 6, 4, 3]
+// randomNum = randomNum.filter(item => item != 3)
+// console.log(randomNum)
+
+
+// let fruits = ["banana", "apple", "orange"]
+
+// console.log(fruits.join(””))
+
+let obj1 = {'/posts': 1, '/users/posts/': 2, '/users/:id/posts': 3}  // 必ずシングルクオーテーション
+
+
+console.log(obj1["/posts"])
+console.log(obj2)

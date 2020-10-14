@@ -1,11 +1,14 @@
 
-# 文字列
+# 文字列操作
 
-## サンプルコード
+データを取り扱う上で、最低限必要とされる操作（CRUD）を把握することは重要です。
+
+ [CRUDの概念](./000_CRUD.md)
+
+ここでは、文字列のデータ操作における、CRUDそれぞれの処理を学んでいきます。
+
 
 ### Create
-
-#### サンプル1
 
 変数``hoge``に、文字列``Hello world!!``を代入・作成してください
 
@@ -26,8 +29,6 @@ let hoge = "Hello world!!!"
 
 ### READ
 
-#### サンプル1
-
 上記で作成した``hoge``の文字列について、下記の内容を``console.log``で表示してください
 
 1. 5文字目のみ
@@ -47,7 +48,7 @@ console.log(hoge.slice(6, hoge.length - 1))
 
 #### 解説
 
-文字列の切り出しは、下記のようにして行うことができます。
+文字列の切り出して、その中身を確認する際は、下記のようにして行うことができます。
 
 * １文字だけであれば``[]``で何文字目かを指定
 * 連続した複数文字であれば、``文字列.slice(始まりの数値, 終わりの数値)``を使用
@@ -62,9 +63,34 @@ console.log(hoge.slice(6, hoge.length - 1))
 </details>
 
 
-### DELETE
+### UPDATE
 
-#### サンプル1
+文字列``"apple,banana,pineapple"``を代入した、変数``word``があります。
+この文字列の``","``を、すべて改行に取り換えるよう変更してください。
+
+```javascript
+let word = "apple,banana,pineapple"
+// ここを実装
+```
+
+<details><summary><b>回答と解説</b></summary>
+
+#### 回答
+
+```javascript
+let word = "apple,banana,pineapple"
+
+word.replace(/,/g, '\n')
+```
+
+#### 解説
+
+文字の切り出しでは、取り換える文字を``''``とすることで、文字そのものを無くしていきました。
+しかし、上記のように取り換える文字を指定することで、文字列の内容をアップデートすることも可能です。
+
+</details>
+
+### DELETE
 
 文字列``"banana"``を代入した、変数``hoge``があります。
 この文字列のうち、``"a"``の文字を全て取り除いてください
@@ -113,17 +139,13 @@ console.log(fruit.replace(replace, ''))
 </details>
 
 
+### その他
 
-### UPDATE
-
-#### サンプル1
-
-文字列``"apple,banana,pineapple"``を代入した、変数``word``があります。
-この文字列の``","``を、すべて改行に取り換えるよう変更してください。
+文字列``"banana"``を代入した、変数``hoge``があります。
+各文字が１文字ずつ入った、配列``bananaBox``を作成してください。
 
 ```javascript
-let word = "apple,banana,pineapple"
-
+let hoge = "banana"
 // ここを実装
 ```
 
@@ -132,83 +154,69 @@ let word = "apple,banana,pineapple"
 #### 回答
 
 ```javascript
-let word = "apple,banana,pineapple"
+let hoge = "banana"
 
-word.replace(/,/g, '\n')
+let bananaBox = hoge.split('')
+
 ```
 
 #### 解説
 
-文字の切り出しでは、取り換える文字を``''``とすることで、文字そのものを無くしていきました。
-しかし、上記のように取り換える文字を指定することで、文字列の内容をアップデートすることも可能です。
+文字列を、特定の文字で区切り分割、配列にしたい場合は``split()``を使用します。
+
+（）の中には、区切りたい文字を入れます。ここに入れた文字は、区切られた配列の文字列データからは除外されます。
+
+（）の中を``('')``というようにから文字列にした場合、UTF-16の文字１文字ずつに分割されます。
 
 </details>
 
 ## 問題
 
-
 ### 問題1
 
-引数``x``を取り、xを3で割って10を足した数を返す関数``divide3``を作ってください。
+引数``string``をとり、``string``の文字列をを反転させた文字列を返す、関数``stringReverse``を作成してください。
 
-funciton名：divide3(x)
+引数``string``に渡される値は、必ず文字列となります。
+
+
+function名：stringReverse(string)
+
 
 #### 例
 
 ##### 例1
 
 ```
-input: x = 3
+input: "banana"
 
-output: 11
+output: "ananab"
 ```
 
 ##### 例2
 
 ```
-input: x = 10
+input: "123456789"
 
-output: 13.3333333....
+output: "987654321"
 ```
-
-##### 例3
-
-```
-input: x = null
-
-output: 10
-```
-
-##### 例4
-
-```
-input: x = undefined
-
-output: NaN
-```
-
-##### 例5
-
-```
-input: x = "10"
-
-output: 13.3333333....
-```
-
 
 ### 問題2
 
-関数``restOfx``は、引数xを7で割った際の答えと余りを
+下記の文字列が代入された変数``forSplit``があります。
 
+```javascript
+let forSplit = "jfkdla;djfiaopwueiljrtawl;ejtkl;aw"
 ```
-◯余り△
-```
 
-というような文字列で返す関数です。
+引数``forSplit``をとり、``forSplit``を５文字ずつ分割した配列を返す関数``split5toArray``を作成してください。
 
-関数``restOfx``を作成してください。
+なお、配列の最後は１〜５文字の範囲内であれば、文字数を問いません（残りの文字を全て入れてください）
 
-funciton名：restOfx(x)
+引数``forSplit``に渡される値は、必ず文字列となります。
+
+この文字列
+
+funciton名：split5toArray(forSplit)
 
 
 #### 例
@@ -216,39 +224,24 @@ funciton名：restOfx(x)
 ##### 例1
 
 ```
-input: x = 21
+input: "aiueoaiueoaiueoaiueo"
 
-output: 3余り0
+output: ["aiueo", "aiueo", "aiueo"]
 ```
+
 
 ##### 例2
 
 ```
-input: x = 3
+input: "aiueoaiueoaiueoaiueoa"
 
-output: 0.42857142857142855余り3
+output: ["aiueo", "aiueo", "aiueo", "a"]
 ```
 
 ##### 例3
 
 ```
-input: x = 0
+input: "11111222223333344444555"
 
-output: 0余り0
-```
-
-##### 例4
-
-```
-input: x = undefined
-
-output: NaN余りNaN
-```
-
-##### 例5
-
-```
-input: null
-
-output: 0余り0
+output: ["11111", "22222", "33333", "44444", "555"]
 ```
