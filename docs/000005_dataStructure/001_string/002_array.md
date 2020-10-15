@@ -335,7 +335,7 @@ funciton名：shift2Array(arr)
 
 ##### 例1
 
-```
+```javascript
 input: arr = ["a", "b", "c", "d", "e", "f", "g"]
 
 output: ["c", "d", "e", "f", "g", "a", "b"]
@@ -343,7 +343,7 @@ output: ["c", "d", "e", "f", "g", "a", "b"]
 
 ##### 例2
 
-```
+```javascript
 input: arr = ["a", "", "", "d", "e", "f", "g"]
 
 output: ["", "d", "e", "f", "g", "a", ""]
@@ -351,7 +351,7 @@ output: ["", "d", "e", "f", "g", "a", ""]
 
 ##### 例3
 
-```
+```javascript
 input: arr = ["a", "b"]
 
 output: ["a", "b"]

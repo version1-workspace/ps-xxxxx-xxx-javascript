@@ -771,5 +771,72 @@ fruit = "banana"
 let obj1 = {'/posts': 1, '/users/posts/': 2, '/users/:id/posts': 3}  // 必ずシングルクオーテーション
 
 
-console.log(obj1["/posts"])
-console.log(obj2)
+// console.log(obj1["/posts"])
+
+let objectSample = {
+    id : 001,
+    name : 'Alice',
+    gender: 'female',
+    'the hobby': 'reading',
+    greeting: function() {
+        console.log('Hello, ' + this.name)
+    }
+}
+
+// console.log(objectSample['name'])
+// console.log(objectSample['the hobby'])
+// objectSample.greeting()
+// console.log(objectSample.name)
+
+// objectSample['age'] = 24
+// objectSample['name'] = 'Jenny'
+
+// delete objectSample['age']
+
+// console.log(Object.keys(objectSample))
+// console.log(Object.values(objectSample))
+// console.log(Object.entries(objectSample))
+
+
+function recursiveAddition(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return n + recursiveAddition(n-1)
+}
+
+console.log(recursiveAddition(5))
+
+let lettersList = ["a", "u", "t", "j", "i", "o"]
+let numList = [1, 5, 2, 7, 4, 8, 10, 3]
+
+lettersList.sort()
+numList.sort(function(a, b){
+    return a - b;
+})
+
+// console.log(numList)
+// console.log(lettersList)
+
+// lettersList.sort().reverse()
+// numList.sort(function(a, b){
+//     return b - a;
+// })
+
+// console.log(numList)
+// console.log(lettersList)
+
+let productsList = {
+    pencil: 'Pencil', 
+    notebook: 'Notebook',
+    pen: 'Pen', 
+    staple: 'Staple'
+}
+
+
+
+let keys = Object.keys(productsList);
+keys.sort()
+for (key of keys) {
+    console.log(productsList[key])
+}
