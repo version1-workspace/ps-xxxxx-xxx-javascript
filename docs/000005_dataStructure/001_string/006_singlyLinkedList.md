@@ -110,37 +110,3 @@ input: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 output: 4
 // 中間地点のNodeは3と4になるため、2つ目の4を返す
 ```
-
-<!-- 
-### 問題3
-
-```javascript
-function Node(val, next) {
-    this.val = val
-    this.next = (next === undefined ? null : next)
-}
-```
-
-上は、単一方向リストを構成する``Node``の定義です。
-引数 ``head``を取り、与えられた単一方向リストに循環が存在する場合は``true``、ない場合は``false``を返す``hasCycleOrNot``を作成してください。
-
-function名：  hasCycleOrNot(head)
-
-#### 例
-
-##### 例1
-
-```
-input: head = [1 -> 2 -> 0 -> -3]
-output: 3
-```
-
-
-##### 例2
-
-```
-input: 1 -> 2 -> 3 -> 4 -> 5 -> 6
-
-output: 4
-// 中間地点のNodeは3と4になるため、2つ目の4を返す
-``` -->

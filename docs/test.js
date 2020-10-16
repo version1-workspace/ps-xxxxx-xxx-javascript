@@ -644,21 +644,60 @@ const myFavoriteFoodsArrow = (food, snack, drink) => {
 
 // (function() { console.log(`hello`)})()
 
+// let Greeting = function() {
+//     // ここを実装してください
+//     return {
+//         morning: function(name) {
+//             console.log("Good morning, " + name)
+//         },
+//         daytime: function(name) {
+//             console.log("Hello, " + name)
+//         },
+//         evening: function(name) {
+//             console.log("Good evening, " + name)
+//         },
+//         night: function(name) {
+//             console.log("Good night, " + name)
+//         }
+//     }
+// };
+
+// let Egg = function() {
+//     let egg = 0;
+//     function addEgg() {
+//         egg++
+//     }
+//     function check() {
+//         console.log(egg)
+//     }
+//     return {
+//         check,
+//         add: function() {
+//             addEgg();
+//         }
+//     }
+// };
+
+
 let Greeting = function() {
     // ここを実装してください
+    function morning(name){
+        console.log("Good morning, " + name)
+    }
+    function daytime(name){
+        console.log("Hello, " + name)
+    }
+    function evening(name){
+        console.log("Good evening, " + name)
+    }
+    function goodNight(name){
+       console.log("Good night, " + name)
+    }
     return {
-        morning: function(name) {
-            console.log("Good morning, " + name)
-        },
-        daytime: function(name) {
-            console.log("Hello, " + name)
-        },
-        evening: function(name) {
-            console.log("Good evening, " + name)
-        },
-        night: function(name) {
-            console.log("Good night, " + name)
-        }
+        morning,
+        daytime,
+        evening,
+        night : goodNight
     }
 };
 
