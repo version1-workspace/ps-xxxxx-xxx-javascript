@@ -7,6 +7,12 @@
 
 ここでは、配列のデータ操作における、CRUDそれぞれの処理を学んでいきます。
 
+|CRUD|文字列での操作|
+|-|-|
+|Create|宣言|
+|Read|配列中の要素（◯番目）の指定、``slice()``の使用など|
+|Update|``=``による変更、``splice``、``push``、``unshift``など|
+|Delete|``splice``、``pop``、``shift``など|
 
 ### Create
 
